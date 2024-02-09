@@ -11,10 +11,10 @@ const Contact = () => {
                     <label htmlFor="phone">PHONE NUMBER</label>
                     <div className="phone">
                         <div>
-                            <input type="text" />
+                            <input type="number" />
                         </div>
                         <div>
-                            <input type="text" />
+                            <input type="number" />
                         </div>
                     </div>
                     <label htmlFor="name">NAME</label>

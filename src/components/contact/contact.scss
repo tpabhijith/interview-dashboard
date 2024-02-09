@@ -55,6 +55,15 @@
                         outline: none;
                         border: none;
                         height: 100%;
+                        padding-left: var(--mb-0-75);
+                    }
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                    input[type="number"] {
+                        -moz-appearance: textfield;
                     }
                 }
             }
@@ -71,6 +80,7 @@
                     outline: none;
                     border: none;
                     height: 100%;
+                    padding-left: var(--mb-0-75);
                 }
             }
             .email {
@@ -86,6 +96,7 @@
                     outline: none;
                     border: none;
                     height: 100%;
+                    padding-left: var(--mb-0-75);
                 }
             }
             button {
