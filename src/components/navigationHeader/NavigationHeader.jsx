@@ -1,25 +1,60 @@
 import React from "react";
 import "./navigationHeader.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavigationHeader = () => {
     return (
         <div className="navigationWrapper">
             <nav>
                 <li>
-                    <Link to="/">Home</Link>
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            isActive ? "active" : "inactive"
+                        }
+                    >
+                        Home
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="contact">Contact</Link>
+                    <NavLink
+                        to="contact"
+                        className={({ isActive }) =>
+                            isActive ? "active" : "inactive"
+                        }
+                    >
+                        Contact
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="#">Products</Link>
+                    <NavLink
+                        to="products"
+                        className={({ isActive }) =>
+                            isActive ? "active" : "inactive"
+                        }
+                    >
+                        Products
+                    </NavLink>
                 </li>
                 <li>
-                    <Link href="#">Transactions</Link>
+                    <NavLink
+                        to="transactions"
+                        className={({ isActive }) =>
+                            isActive ? "active" : "inactive"
+                        }
+                    >
+                        Transactions
+                    </NavLink>
                 </li>
                 <li>
-                    <Link href="#">Journal</Link>
+                    <NavLink
+                        to="journal"
+                        className={({ isActive }) =>
+                            isActive ? "active" : "inactive"
+                        }
+                    >
+                        Journal
+                    </NavLink>
                 </li>
             </nav>
         </div>

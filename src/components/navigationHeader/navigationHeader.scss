@@ -22,7 +22,8 @@
                 font-weight: 500;
                 position: relative;
             }
-            a:hover {
+            a:hover,
+            a.active {
                 color: var(--blue-text-color);
                 &::after {
                     content: "";
