@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2rem;
+    background: var(--header-bg-color);
+    .logo {
+        position: absolute;
+        top: -2.5rem;
+        left: 10%;
+        width: 180px;
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    .company {
+        font-size: var(--h1-font-size);
+        font-weight: var(--font-medium);
+        color: var(--header-text-color);
+    }
+}

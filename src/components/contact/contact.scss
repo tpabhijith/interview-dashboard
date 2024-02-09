@@ -1,0 +1,115 @@
+.contactWrapper {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    @media screen and (max-width: 1240px) {
+        flex-direction: column;
+    }
+    .left {
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        @media screen and (max-width: 1240px) {
+            margin-bottom: var(--mb-3);
+            width: 80%;
+            align-items: center;
+        }
+        h3 {
+            font-size: var(--big-font-size);
+            color: var(--blue-text-color);
+            font-weight: var(--font-medium);
+            margin-bottom: var(--mb-1);
+            @media screen and (max-width: 1240px) {
+                text-align: center;
+            }
+            @media screen and (max-width: 580px) {
+                font-size: var(--h1-font-size);
+            }
+        }
+        form {
+            .phone {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: var(--mb-0-5);
+                margin-bottom: var(--mb-1-5);
+                @media screen and (max-width: 660px) {
+                    flex-direction: column;
+                }
+                div {
+                    width: 45%;
+                    border: 1px solid var(--header-text-color);
+                    border-radius: 30px;
+                    height: 45px;
+                    @media screen and (max-width: 660px) {
+                        width: 100%;
+                        margin-bottom: var(--mb-1);
+                    }
+                    input {
+                        width: 100%;
+                        border-radius: 30px;
+                        outline: none;
+                        border: none;
+                        height: 100%;
+                    }
+                }
+            }
+            .name {
+                width: 100%;
+                border: 1px solid var(--header-text-color);
+                border-radius: 30px;
+                height: 45px;
+                margin-top: var(--mb-0-5);
+                margin-bottom: var(--mb-1-5);
+                input {
+                    width: 100%;
+                    border-radius: 30px;
+                    outline: none;
+                    border: none;
+                    height: 100%;
+                }
+            }
+            .email {
+                width: 100%;
+                border: 1px solid var(--header-text-color);
+                border-radius: 30px;
+                height: 45px;
+                margin-top: var(--mb-0-5);
+                margin-bottom: var(--mb-3);
+                input {
+                    width: 100%;
+                    border-radius: 30px;
+                    outline: none;
+                    border: none;
+                    height: 100%;
+                }
+            }
+            button {
+                color: #fff;
+                background: var(--blue-text-color);
+                height: 45px;
+                width: 100%;
+                border-radius: 30px;
+                border: 1px solid var(--header-text-color);
+            }
+        }
+    }
+    .right {
+        width: 50%;
+        @media screen and (max-width: 1240px) {
+            margin-top: var(--mb-3);
+            width: 80%;
+        }
+        .imageWrapper {
+            width: 100%;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}

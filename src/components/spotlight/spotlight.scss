@@ -1,0 +1,97 @@
+.spotlightWrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 1240px) {
+        flex-direction: column;
+    }
+    .left {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        @media screen and (max-width: 1240px) {
+            margin-bottom: var(--mb-3);
+            width: 60%;
+            align-items: center;
+        }
+        @media screen and (max-width: 660px) {
+            width: 80%;
+        }
+        h3 {
+            font-size: var(--h1-font-size);
+            color: var(--header-text-color);
+            font-weight: var(--font-medium);
+        }
+        p {
+            color: var(--header-text-color);
+            font-weight: var(--font-medium);
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 2px;
+                width: 35px;
+                height: 3px;
+                background: var(--header-text-color);
+            }
+            margin-bottom: var(--mb-0-5);
+        }
+        div {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media screen and (max-width: 660px) {
+                width: 85%;
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                margin-bottom: var(--mb-2);
+            }
+            button {
+                background: var(--header-bg-color);
+                padding: 12px 20px;
+                width: 80%;
+                border-radius: 30px;
+                color: var(--button-text-color);
+                font-weight: 500;
+            }
+        }
+    }
+    .right {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: var(--mb-2);
+        @media screen and (max-width: 1240px) {
+            width: 75%;
+        }
+        @media screen and (max-width: 660px) {
+            width: 85%;
+        }
+        h3 {
+            font-size: var(--h1-font-size);
+            color: var(--button-bg-color);
+            font-weight: var(--font-medium);
+            text-align: center;
+        }
+        .unlock {
+            background: var(--button-bg-color);
+            padding: 8px 24px;
+            border-radius: 30px;
+            color: #fff;
+            font-weight: 500;
+        }
+    }
+}
